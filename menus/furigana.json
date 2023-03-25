@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    ".CodeMirror": [
+      {
+        "label": "Toggle furigana",
+        "command": "furigana:furigana"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Plugins",
+      "submenu": [
+        {
+          "label": "furigana",
+          "submenu": [
+            {
+              "label": "Toggle furigana",
+              "command": "furigana:furigana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
