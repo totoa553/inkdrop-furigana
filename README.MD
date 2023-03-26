@@ -1,6 +1,6 @@
 ## install
 ```
-ipm install
+ipm install furigana
 ```
 
 ## usage
