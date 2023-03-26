@@ -1,7 +1,7 @@
 {
   "name": "furigana",
   "main": "./lib/furigana",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A furigana plug-in for inkdrop",
   "keywords": [],
   "repository": "https://github.com/totoa553/inkdrop-furigana",
@@ -9,6 +9,5 @@
   "engines": {
     "inkdrop": "^5.x"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
