@@ -1,13 +1,13 @@
 {
   "name": "furigana",
   "main": "./lib/furigana",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A furigana plug-in for inkdrop",
   "keywords": [],
   "repository": "https://github.com/totoa553/inkdrop-furigana",
   "license": "MIT",
   "engines": {
-    "inkdrop": "^5.3.1"
+    "inkdrop": "^5.x"
   },
   "dependencies": {
   }
