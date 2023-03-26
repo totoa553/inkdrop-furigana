@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "A furigana plug-in for inkdrop",
   "keywords": [],
-  "repository": "https://github.com/inkdropapp/furigana",
+  "repository": "https://github.com/totoa553/inkdrop-furigana",
   "license": "MIT",
   "engines": {
     "inkdrop": "^5.3.1"
