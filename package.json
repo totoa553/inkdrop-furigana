@@ -1,13 +1,24 @@
 {
   "name": "furigana",
-  "main": "./lib/furigana",
+  "main": "./lib/index",
   "version": "0.2.0",
   "description": "A furigana plug-in for inkdrop",
   "keywords": [],
   "repository": "https://github.com/totoa553/inkdrop-furigana",
   "license": "MIT",
   "engines": {
-    "inkdrop": "^5.x"
+    "inkdrop": ">=5.6.0 <7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "rollup": "^3.29.2"
+  },
+  "scripts": {
+    "build": "rm -rf lib && rollup -c --bundleConfigAsCjs",
+    "watch": "rollup -c --watch --bundleConfigAsCjs"
+  }
 }

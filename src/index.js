@@ -1,11 +1,10 @@
-'use babel';
+import { markdownRenderer } from 'inkdrop';
+import { remarkRuby } from './remark';
 
-const { markdownRenderer } = require('inkdrop')
-const ruby = require('./index');
-
-module.exports = {
+export default {
 
   activate() {
+    // console.log("hello")
     this.subscription = inkdrop.commands.add(document.body, {
       'furigana:furigana': () => {
         if(/｜(\S+|)《(\S+|)》/.test(inkdrop.getActiveEditor().cm.getSelection())){
@@ -17,13 +16,13 @@ module.exports = {
         }
       }
     });
-    markdownRenderer.remarkPlugins.push(ruby);
-    console.log(markdownRenderer);
+    markdownRenderer.remarkPlugins.push(remarkRuby);
+    // console.log(markdownRenderer);
   },
 
   deactivate() {
     this.subscription.dispose();
-    markdownRenderer.remarkPlugins = markdownRenderer.remarkPlugins.filter(a!=ruby);
+    markdownRenderer.remarkPlugins = markdownRenderer.remarkPlugins.filter(a!=remarkRuby);
   }
 
 };
